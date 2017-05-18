@@ -1,0 +1,35 @@
+<resources>
+    <!-- general -->
+    <string name="app_name">SecureChat</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="network_error">Some network error occurred, please try again later.</string>
+    <!-- login/logout/register -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout_alert_msg">Are you sure you want to logout?</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="register_failed">Register Failed</string>
+    <string name="register_succeeded">Register Succeeded</string>
+    <!-- nav_menu -->
+    <string name="chat">Chat</string>
+    <string name="friends">Friends</string>
+    <string name="logout">Logout</string>
+    <!-- friends -->
+    <string name="add_friend">Add Friend</string>
+    <string name="add_friend_input_hint">Input email</string>
+    <string name="friend_request_sent">Friend request sent.</string>
+    <string name="no_such_user">No such user!</string>
+    <string name="friends_already">You are (pending) friends already!</string>
+    <string name="pending_friend_requests">Pending Friend Requests</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <!-- chat_detail -->
+    <string name="chat_input_hint">Say something</string>
+    <string name="send">Send</string>
+    <string name="send_file">Send File</string>
+    <string name="external_file_chooser_needed">External file chooser needed!</string>
+    <string name="failed_to_read_the_file">Failed to read the file!</string>
+</resources>

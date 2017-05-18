@@ -1,0 +1,24 @@
+{
+  "name": "secure-chat-server",
+  "version": "1.0.0",
+  "description": "The server part of SecureChat.",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "AkikoZ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkikoZ/SecureChat.git"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.1.1",
+    "mysql": "^2.13.0",
+    "node-rsa": "^0.4.2",
+    "sequelize": "^3.30.4",
+    "socket.io": "^2.0.1"
+  }
+}

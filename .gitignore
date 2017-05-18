@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Database config file
+/server/config.js
+
+# Other
+.DS_Store

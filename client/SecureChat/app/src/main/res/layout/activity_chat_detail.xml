@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/msg_recycler_view"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+        <EditText android:id="@+id/input_text"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:hint="@string/chat_input_hint"
+                  android:maxLines="2"/>
+
+        <ImageButton android:id="@+id/send_file"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/ic_attachment_white_24dp"
+                     android:contentDescription="@string/send_file"/>
+
+        <Button android:id="@+id/send_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"/>
+
+    </LinearLayout>
+
+</LinearLayout>
