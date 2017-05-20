@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.adapter;
+package com.akikoz.securechat.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,11 +10,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.afollestad.sectionedrecyclerview.SectionedRecyclerViewAdapter;
 import com.afollestad.sectionedrecyclerview.SectionedViewHolder;
-import com.akikosoft.securechat.ChatDetailActivity;
-import com.akikosoft.securechat.R;
-import com.akikosoft.securechat.SecureChatApplication;
-import com.akikosoft.securechat.model.Chat;
-import com.akikosoft.securechat.model.Friend;
+import com.akikoz.securechat.ChatDetailActivity;
+import com.akikoz.securechat.R;
+import com.akikoz.securechat.SecureChatApplication;
+import com.akikoz.securechat.model.Chat;
+import com.akikoz.securechat.model.Friend;
 import io.socket.client.Ack;
 
 import java.util.List;

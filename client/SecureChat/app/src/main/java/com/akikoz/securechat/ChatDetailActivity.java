@@ -1,4 +1,4 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import com.akikosoft.securechat.adapter.MsgAdapter;
-import com.akikosoft.securechat.model.*;
-import com.akikosoft.securechat.util.AESUtil;
-import com.akikosoft.securechat.util.FileUtil;
-import com.akikosoft.securechat.util.RSAUtil;
+import com.akikoz.securechat.adapter.MsgAdapter;
+import com.akikoz.securechat.model.*;
+import com.akikoz.securechat.util.AESUtil;
+import com.akikoz.securechat.util.FileUtil;
+import com.akikoz.securechat.util.RSAUtil;
 
 import java.io.File;
 import java.security.PublicKey;

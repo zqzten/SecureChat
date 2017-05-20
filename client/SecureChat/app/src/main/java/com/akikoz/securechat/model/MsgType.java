@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.model;
+package com.akikoz.securechat.model;
 
 public enum MsgType {
     TEXT_RECEIVED,

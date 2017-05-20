@@ -1,4 +1,4 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.akikosoft.securechat.adapter.ChatAdapter;
+import com.akikoz.securechat.adapter.ChatAdapter;
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 
 public class ChatFragment extends Fragment {

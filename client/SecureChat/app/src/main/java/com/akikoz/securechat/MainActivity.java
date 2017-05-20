@@ -1,4 +1,4 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.Manifest;
 import android.content.DialogInterface;

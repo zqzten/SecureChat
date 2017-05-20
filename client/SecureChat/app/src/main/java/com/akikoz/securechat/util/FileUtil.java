@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.util;
+package com.akikoz.securechat.util;
 
 import android.content.ContentUris;
 import android.content.Context;

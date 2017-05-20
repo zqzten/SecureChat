@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.adapter;
+package com.akikoz.securechat.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,10 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.akikosoft.securechat.ChatDetailActivity;
-import com.akikosoft.securechat.R;
-import com.akikosoft.securechat.model.Chat;
-import com.akikosoft.securechat.model.Msg;
+import com.akikoz.securechat.ChatDetailActivity;
+import com.akikoz.securechat.R;
+import com.akikoz.securechat.model.Chat;
+import com.akikoz.securechat.model.Msg;
 
 import java.util.List;
 

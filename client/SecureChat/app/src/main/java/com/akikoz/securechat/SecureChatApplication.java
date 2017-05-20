@@ -1,9 +1,9 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.app.Application;
 import android.os.Environment;
-import com.akikosoft.securechat.model.*;
-import com.akikosoft.securechat.util.*;
+import com.akikoz.securechat.model.*;
+import com.akikoz.securechat.util.*;
 import io.socket.client.Ack;
 import io.socket.client.IO;
 import io.socket.client.Socket;

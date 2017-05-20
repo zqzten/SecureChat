@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.model;
+package com.akikoz.securechat.model;
 
 import java.io.Serializable;
 

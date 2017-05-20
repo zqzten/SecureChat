@@ -1,4 +1,4 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.akikosoft.securechat.util.RESTUtil;
-import com.akikosoft.securechat.util.RSAUtil;
+import com.akikoz.securechat.util.RESTUtil;
+import com.akikoz.securechat.util.RSAUtil;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;

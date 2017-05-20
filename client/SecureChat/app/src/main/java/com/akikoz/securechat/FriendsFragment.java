@@ -1,4 +1,4 @@
-package com.akikosoft.securechat;
+package com.akikoz.securechat;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import android.view.*;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.akikosoft.securechat.adapter.FriendAdapter;
+import com.akikoz.securechat.adapter.FriendAdapter;
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import io.socket.client.Ack;
 

@@ -1,4 +1,4 @@
-package com.akikosoft.securechat.adapter;
+package com.akikoz.securechat.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.akikosoft.securechat.R;
-import com.akikosoft.securechat.model.Msg;
-import com.akikosoft.securechat.model.MsgType;
+import com.akikoz.securechat.R;
+import com.akikoz.securechat.model.Msg;
+import com.akikoz.securechat.model.MsgType;
 
 import java.util.List;
 

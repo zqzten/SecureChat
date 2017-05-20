@@ -1,6 +1,6 @@
-package com.akikosoft.securechat.util;
+package com.akikoz.securechat.util;
 
-import com.akikosoft.securechat.model.Secret;
+import com.akikoz.securechat.model.Secret;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
