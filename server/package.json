@@ -15,10 +15,10 @@
     "bcryptjs": "^2.4.3",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.1.1",
+    "koa-router": "^7.2.0",
     "mysql": "^2.13.0",
     "node-rsa": "^0.4.2",
     "sequelize": "^3.30.4",
-    "socket.io": "^2.0.1"
+    "socket.io": "^2.0.2"
   }
 }
