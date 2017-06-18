@@ -5,7 +5,7 @@ A **secure** IM implemented with Node.js server and Android client.
 
 ### Prerequisites
 * MySQL Community Server v5.6.35
-* Node.js v8.0.0 with npm v5.0.2
+* Node.js v8.0.0 with npm v5.0.0
 * Android SDK API 25 with Support Repository
 
 ### Setup database

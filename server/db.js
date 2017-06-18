@@ -18,7 +18,7 @@ const TYPES = ["STRING", "TEXT", "INTEGER", "BIGINT", "DOUBLE", "DATE", "BOOLEAN
 
 function defineModel(name, attributes) {
     let attrs = {};
-    for (let key in attributes) {
+    for (const key in attributes) {
         let value = attributes[key];
         if (typeof value === "object" && value["type"]) {
             value.allowNull = value.allowNull || false;
@@ -47,7 +47,7 @@ let db = {
 };
 
 db.ID = ID_TYPE;
-for (let type of TYPES) {
+for (const type of TYPES) {
     db[type] = Sequelize[type];
 }
 

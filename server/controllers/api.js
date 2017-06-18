@@ -43,7 +43,7 @@ module.exports = {
         if (!(email && password)) throw new APIError("login:request_invalid");
 
         // validate email
-        let user = await util.getUser(email);
+        const user = await util.getUser(email);
         if (!user) throw new APIError("login:user_not_exist");
 
         // validate password

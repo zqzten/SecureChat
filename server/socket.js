@@ -30,7 +30,7 @@ module.exports = io => {
             password = aes.decrypt(password, sessionKey, sessionIV);
 
             // validate email and password
-            let user = await util.getUser(email);
+            const user = await util.getUser(email);
             if (!user) return;
             if (!bcrypt.compareSync(password, user.password)) return;
 
@@ -40,8 +40,8 @@ module.exports = io => {
 
             // notify the user's friends and check if they are online
             let friendList = [];
-            let friendEmails = await util.getFriends(email);
-            for (let friendEmail of friendEmails) {
+            const friendEmails = await util.getFriends(email);
+            for (const friendEmail of friendEmails) {
                 const friend = await util.getUser(friendEmail);
                 const online = emailIDMap.has(friendEmail);
                 friendList.push({ email: friendEmail, publicKeyPEM: friend.publicKey, online: online });
@@ -63,8 +63,8 @@ module.exports = io => {
             const email = idUserMap.get(socket.id).email;
 
             // notify the user's friends
-            let friends = await util.getFriends(email);
-            for (let friend of friends) {
+            const friends = await util.getFriends(email);
+            for (const friend of friends) {
                 if (emailIDMap.has(friend)) {
                     const id = emailIDMap.get(friend);
                     io.to(id).emit("friend offline", encryptForUserSession(email, id));
@@ -82,7 +82,7 @@ module.exports = io => {
             friendEmail = decryptForUserSession(friendEmail, socket.id);
 
             // validate friend email
-            let friend = await util.getUser(friendEmail);
+            const friend = await util.getUser(friendEmail);
             if (!friend) {
                 ack(encryptForUserSession("no such user", socket.id));
                 return;
@@ -92,14 +92,14 @@ module.exports = io => {
             const email = idUserMap.get(socket.id).email;
 
             // check if (pending) friends already
-            let buddy = await util.getBuddy(email, friendEmail);
+            const buddy = await util.getBuddy(email, friendEmail);
             if (buddy) {
                 ack(encryptForUserSession("friends already", socket.id));
                 return;
             }
 
             // create pending buddy
-            util.createPendingBuddy(email, friendEmail);
+            await util.createPendingBuddy(email, friendEmail);
 
             // forward request
             if (emailIDMap.has(friendEmail)) {
@@ -117,7 +117,7 @@ module.exports = io => {
             const email = idUserMap.get(socket.id).email;
 
             // accept pending buddy
-            util.acceptPendingBuddy(friendEmail, email);
+            await util.acceptPendingBuddy(friendEmail, email);
 
             // notify the buddy
             const friend = await util.getUser(friendEmail);
@@ -140,7 +140,7 @@ module.exports = io => {
             const email = idUserMap.get(socket.id).email;
 
             // delete pending buddy
-            util.deletePendingBuddy(friendEmail, email);
+            await util.deletePendingBuddy(friendEmail, email);
         });
 
         /* user send initial private text msg */
