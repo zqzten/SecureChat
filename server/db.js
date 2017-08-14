@@ -6,11 +6,7 @@ const sequelize = new Sequelize(config.database, config.username, config.passwor
     host: config.host,
     port: config.port,
     dialect: config.dialect,
-    pool: {
-        max: 5,
-        min: 0,
-        idle: 10000
-    }
+    logging: false
 });
 
 const ID_TYPE = Sequelize.INTEGER;

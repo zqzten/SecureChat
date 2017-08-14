@@ -1,10 +1,10 @@
-const Koa = require("koa");
-const bodyParser = require("koa-bodyparser");
+const Koa = require('koa');
+const bodyParser = require('koa-bodyparser');
 
-const model = require("./model");
-const rest = require("./rest");
-const controller = require("./controller");
-const socket = require("./socket");
+const model = require('./model');
+const rest = require('./rest');
+const controller = require('./controller');
+const socket = require('./socket');
 
 // init db
 model.sync();
@@ -28,9 +28,9 @@ app.use(controller());
 const server = app.listen(3000);
 
 // init socket.io
-const io = require("socket.io").listen(server);
+const io = require('socket.io').listen(server);
 
 // bind events to socket.io
 socket(io);
 
-console.log("app started at port 3000...");
+console.log('app started at port 3000...');

@@ -1,6 +1,6 @@
-const db = require("../db");
+const db = require('../db');
 
-module.exports = db.defineModel("users", {
+module.exports = db.defineModel('users', {
     email: {
         type: db.STRING,
         unique: true
