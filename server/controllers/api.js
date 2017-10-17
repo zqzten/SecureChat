@@ -25,7 +25,7 @@ module.exports = {
         // create user
         const user = {
             email: email,
-            password: bcrypt.hashSync(password),
+            password: await bcrypt.hash(password, await bcrypt.genSalt()),
             publicKey: publicKey,
             privateKey: aes.encrypt(privateKey, password)
         };
@@ -47,7 +47,7 @@ module.exports = {
         if (!user) throw new APIError('login:user_not_exist');
 
         // validate password
-        if (!bcrypt.compareSync(password, user.password)) throw new APIError('login:password_mismatch');
+        if (!await bcrypt.compare(password, user.password)) throw new APIError('login:password_mismatch');
 
         ctx.rest({
             privateKey: aes.decrypt(user.privateKey, password)
