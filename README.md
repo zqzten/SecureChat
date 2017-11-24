@@ -101,9 +101,9 @@ Other services provided by the server (such as friend query, online notification
 1. Send uses socket to send a message forward request to server, along with the receiver's email encrypted by AES-128-CBC with the AES key and IV shared with the server before and all the above-mentioned encrypted things
 1. Server decrypts the receiver's email using its AES key and IV shared with the sender and forward the other things along with the sender's email encrypted using AES-128-CBC with the AES key and IV shared with the receiver before
 1. Receiver decrypts the sender's email using its AES key and IV shared with the server and get the sender's public key from its friend list
-1. Receiver uses sender's public key to decrypt the AES key and IV of the session
+1. Receiver uses its private key to decrypt the AES key and IV of the session
 1. Receiver uses the decrypted AES key and IV to decrypt the message and signature
-1. Receiver decrypt (validate) the signature using the send's public key
+1. Receiver decrypt (validate) the signature using the sender's public key
 1. Receiver calculate the SHA-256 hash of the plain message and check its integrity by comparing the result with the decrypted signature
 1. Receiver saves the corresponding AES key and IV of the sender in memory if all the above procedures are successful
 1. In the following socket transportation, the sender and the receiver (may change roles) use each other's public key to sign the plain message and then use AES-128-CBC with their shared session AES key and IV to encrypt and decrypt all the messages and signatures
